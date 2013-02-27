@@ -1,0 +1,147 @@
+<html>
+<head>
+	<title>neo4j</title>
+	<style type="text/css">
+		.method_description{border:1px solid #555;margin-top:20px;}
+	</style>
+</head>
+<body>
+	<h3>neo4j</h3>
+	<dl>
+		<dd><a href="#__construct">neo4j::__construct</a></dd>
+		<dd><a href="#createNode">neo4j::createNode</a></dd>
+		<dd><a href="#getNode">neo4j::getNode</a></dd>
+		<dd><a href="#deleteNode">neo4j::deleteNode</a></dd>
+		<dd><a href="#createRelationship">neo4j::createRelationship</a></dd>
+		<dd><a href="#getRelationship">neo4j::getRelationship</a></dd>
+		<dd><a href="#deleteRelationship">neo4j::deleteRelationship</a></dd>
+		<dd><a href="#getPath">neo4j::getPath</a></dd>
+		<dd><a href="#getPaths">neo4j::getPaths</a></dd>
+		<dd><a href="#getNodeIndex">neo4j::getNodeIndex</a></dd>
+		<dd><a href="#deleteNodeIndex">neo4j::deleteNodeIndex</a></dd>
+		<dd><a href="#getRelationshipIndex">neo4j::getRelationshipIndex</a></dd>
+		<dd><a href="#deleteRelationshipIndex">neo4j::deleteRelationshipIndex</a></dd>
+		<dd><a href="#cypher">neo4j::cypher</a></dd>
+		<dd><a href="#query">neo4j::query</a></dd>
+		<dd><a href="#restAPI">neo4j::restAPI</a></dd>
+	</dl>
+
+	<div class="method_description" id="__construct">
+		<h4>public neo4j::__construct([string $host="localhost" [,int $port=7474 [,string $userpsw=""]]])</h4>
+		<p>Create a new neo4j connection object</p>
+		<dl>
+			<dt>userpsw</dt>
+			<dd>username:password</dd>
+		</dl>
+	</div>
+
+	<div class="method_description" id="createNode">
+		<h4>public neo4jNode neo4j::createNode([array $properties=array()])</h4>
+		<p>Create a neo4jNode</p>
+	</div>
+
+	<div class="method_description" id="getNode">
+		<h4>public neo4jNode neo4j::getNode(string $id)</h4>
+		<p>Get a neo4jNode by nodeId</p>
+	</div>
+
+	<div class="method_description" id="deleteNode">
+		<h4>public neo4j::deleteNode(string $id)</h4>
+		<p>Delete a neo4jNode by nodeId</p>
+	</div>
+
+	<div class="method_description" id="createRelationship">
+		<h4>public neo4jRelationship neo4j::createRelationship(mixed $start, mixed $to [,string $type="" [,array $properties=array()]])</h4>
+		<p>Create a neo4jRelationship</p>
+		<p>$start and $to can be nodeId or neo4jNode object.</p>
+	</div>
+
+	<div class="method_description" id="getRelationship">
+		<h4>public neo4jRelationship neo4j::getRelationship(string $id)</h4>
+		<p>Get a neo4jRelationship by relationshipId</p>
+	</div>
+
+	<div class="method_description" id="deleteRelationship">
+		<h4>public neo4j::deleteRelationship(string $id)</h4>
+		<p>Delete a neo4jRelationship by relationshipId</p>
+	</div>
+
+	<div class="method_description" id="getPath">
+		<h4>public neo4jPath neo4j::getPath(mixed $start, mixed $to, string $type, int $algorithm [, array $option])</h4>
+		<p>Get a neo4jPath by conditions</p>
+		<dl>
+			<dt>$algorithm</dt>
+			<dd>NEO4J_PATH_SHORTESTPATH</dd>
+			<dd>NEO4J_PATH_ALLSIMPLEPATHS</dd>
+			<dd>NEO4J_PATH_ALLPATHS</dd>
+			<dd>NEO4J_PATH_DIJKSTRA</dd>
+		</dl>
+
+		<dl>
+			<dt>$option - An array of options to applay</dt>
+			<dd>max_depth</dd>
+			<dd>cost_property - only use for NEO4J_PATH_DIJKSTRA</dd>
+		</dl>
+	</div>
+
+	<div class="method_description" id="getPaths">
+		<h4>public neo4jPath neo4j::getPaths(mixed $start, mixed $to, string $type, int $algorithm [, array $option])</h4>
+		<p>Get all neo4jPathes by conditions</p>
+		<dl>
+			<dt>$algorithm</dt>
+			<dd>NEO4J_PATH_SHORTESTPATH</dd>
+			<dd>NEO4J_PATH_ALLSIMPLEPATHS</dd>
+			<dd>NEO4J_PATH_ALLPATHS</dd>
+			<dd>NEO4J_PATH_DIJKSTRA</dd>
+		</dl>
+
+		<dl>
+			<dt>$option - An array of options to applay</dt>
+			<dd>max_depth</dd>
+			<dd>cost_property - only use for NEO4J_PATH_DIJKSTRA</dd>
+		</dl>
+	</div>
+
+	<div class="method_description" id="getNodeIndex">
+		<h4>public neo4jIndex neo4j::getNodeIndex(string $id)</h4>
+		<p>Get a neo4jIndex of neo4jNode by indexId</p>
+	</div>
+
+	<div class="method_description" id="deleteNodeIndex">
+		<h4>public neo4j::deleteNodeIndex(string $id)</h4>
+		<p>Delete a neo4jIndex of neo4jNode by indexId</p>
+	</div>
+
+	<div class="method_description" id="getRelationshipIndex">
+		<h4>public neo4jIndex neo4j::getRelationshipIndex(string $id)</h4>
+		<p>Get a neo4jIndex of neo4jRelationship by indexId</p>
+	</div>
+
+	<div class="method_description" id="deleteRelationshipIndex">
+		<h4>public neo4j::deleteRelationshipIndex(string $id)</h4>
+		<p>Delete a neo4jIndex of neo4jRelationship by indexId</p>
+	</div>
+
+	<div class="method_description" id="cypher">
+		<h4>public array neo4j::cypher(string $query [, array $params = array()])</h4>
+		<p>Query with cypher</p>
+	</div>
+
+	<div class="method_description" id="query">
+		<h4>public array neo4j::query(string $query)</h4>
+		<p>Find node by query from an automatic index</p>
+	</div>
+
+	<div class="method_description" id="restAPI">
+		<h4>public array neo4j::restAPI(int $method, string $path [,array $data])</h4>
+		<p>Send a request by restAPI</p>
+		<dl>
+			<dt>$method</dt>
+			<dd>REST_METHOD_GET</dd>
+			<dd>REST_METHOD_POST</dd>
+			<dd>REST_METHOD_DELETE</dd>
+			<dd>REST_METHOD_PUT</dd>
+		</dl>
+	</div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+// $Id$
+// vim:ft=javascript
+
+// If your extension references something external, use ARG_WITH
+// ARG_WITH("neo4j", "for neo4j support", "no");
+
+// Otherwise, use ARG_ENABLE
+// ARG_ENABLE("neo4j", "enable neo4j support", "no");
+
+if (PHP_NEO4J != "no") {
+	EXTENSION("neo4j", "neo4j.c");
+}
+

@@ -1,0 +1,49 @@
+<html>
+<head>
+	<title>neo4jIndex</title>
+	<style type="text/css">
+		.method_description{border:1px solid #555;margin-top:20px;}
+	</style>
+</head>
+<body>
+	<h3>neo4jIndex</h3>
+	<dl>
+		<dd><a href="#getId">neo4jIndex::getId</a></dd>
+		<dd><a href="#get">neo4jIndex::get</a></dd>
+		<dd><a href="#getOrCreate">neo4jIndex::getOrCreate</a></dd>
+		<dd><a href="#add">neo4jIndex::add</a></dd>
+		<dd><a href="#remove">neo4jIndex::remove</a></dd>
+		<dd><a href="#delete">neo4jIndex::delete</a></dd>
+	</dl>
+
+	<div class="method_description" id="getId">
+		<h4>public string neo4jIndex::getId()</h4>
+		<p>Get indexId</p>
+	</div>
+
+	<div class="method_description" id="get">
+		<h4>public mix neo4jIndex::get(string $key, string $value)</h4>
+		<p>Get objects by $key and $value</p>
+	</div>
+
+	<div class="method_description" id="getOrCreate">
+		<h4>public mix neo4jIndex::getOrCreate(mixed $obj, string $key, string $value)</h4>
+		<p>Get or create an object by $key and $value</p>
+	</div>
+
+	<div class="method_description" id="add">
+		<h4>public neo4jIndex neo4jIndex::add(mixed $obj, string $key, string $value)</h4>
+		<p>Add an object to the index</p>
+	</div>
+
+	<div class="method_description" id="remove">
+		<h4>public neo4jIndex neo4jIndex::remove(mixed $obj, string $key, string $value)</h4>
+		<p>Remove an object from the index</p>
+	</div>
+
+	<div class="method_description" id="delete">
+		<h4>public neo4jIndex::delete()</h4>
+		<p>Delete self</p>
+	</div>
+</body>
+</html>

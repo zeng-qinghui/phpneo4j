@@ -1,0 +1,198 @@
+<html>
+<head>
+	<title>neo4jNode</title>
+	<style type="text/css">
+		.method_description{border:1px solid #555;margin-top:20px;}
+	</style>
+</head>
+<body>
+	<h3>neo4jNode</h3>
+	<dl>
+		<dd><a href="#getId">neo4jNode::getId</a></dd>
+		<dd><a href="#getUri">neo4jNode::getUri</a></dd>
+		<dd><a href="#save">neo4jNode::save</a></dd>
+		<dd><a href="#delete">neo4jNode::delete</a></dd>
+		<dd><a href="#getProperty">neo4jNode::getProperty</a></dd>
+		<dd><a href="#getAllProperties">neo4jNode::getAllProperties</a></dd>
+		<dd><a href="#setProperty">neo4jNode::setProperty</a></dd>
+		<dd><a href="#setAllProperties">neo4jNode::setAllProperties</a></dd>
+		<dd><a href="#deleteProperty">neo4jNode::deleteProperty</a></dd>
+		<dd><a href="#getRelationships">neo4jNode::getRelationships</a></dd>
+		<dd><a href="#getPathTo">neo4jNode::getPathTo</a></dd>
+		<dd><a href="#getPathFrom">neo4jNode::getPathFrom</a></dd>
+		<dd><a href="#getPathsTo">neo4jNode::getPathsTo</a></dd>
+		<dd><a href="#getPathsFrom">neo4jNode::getPathsFrom</a></dd>
+		<dd><a href="#traverseNodes">neo4jNode::traverseNodes</a></dd>
+		<dd><a href="#traversePaths">neo4jNode::traversePaths</a></dd>
+		<dd><a href="#traverseRelationships">neo4jNode::traverseRelationships</a></dd>
+	</dl>
+
+	<div class="method_description" id="getId">
+		<h4>public string neo4jNode::getId()</h4>
+		<p>Get nodeId</p>
+	</div>
+
+	<div class="method_description" id="getUri">
+		<h4>public string neo4jNode::getUri()</h4>
+		<p>Get uri</p>
+	</div>
+
+	<div class="method_description" id="save">
+		<h4>public neo4jNode neo4jNode::save()</h4>
+		<p>Save self</p>
+	</div>
+
+	<div class="method_description" id="delete">
+		<h4>public neo4jNode::delete()</h4>
+		<p>Delete self</p>
+	</div>
+
+	<div class="method_description" id="getProperty">
+		<h4>public mix neo4jNode::getProperty(string $key)</h4>
+		<p>Get a property by key</p>
+	</div>
+
+	<div class="method_description" id="getAllProperties">
+		<h4>public array neo4jNode::getAllProperties()</h4>
+		<p>Get all properties</p>
+	</div>
+
+	<div class="method_description" id="setProperty">
+		<h4>public neo4jNode neo4jNode::setProperty(string $key,mix $value)</h4>
+		<p>Set a property</p>
+	</div>
+
+	<div class="method_description" id="setAllProperties">
+		<h4>public neo4jNode neo4jNode::setAllProperties(array $properties)</h4>
+		<p>Set all properties</p>
+	</div>
+
+	<div class="method_description" id="deleteProperty">
+		<h4>public neo4jNode neo4jNode::deleteProperty(string $key)</h4>
+		<p>Delete a property</p>
+	</div>
+
+	<div class="method_description" id="getRelationships">
+		<h4>public array neo4jNode::getRelationships([int $direct = NEO4J_RELATIONSHIP_ALL [, array $typeList = array()]])</h4>
+		<p>Get all relationships</p>
+		<dl>
+			<dt>$direct</dt>
+			<dd>NEO4J_RELATIONSHIP_IN</dd>
+			<dd>NEO4J_RELATIONSHIP_OUT</dd>
+			<dd>NEO4J_RELATIONSHIP_ALL</dd>
+		</dl>
+	</div>
+
+	<div class="method_description" id="getPathTo">
+		<h4>public neo4jPath neo4jNode::getPathTo(mixed $to, string $type, int $algorithm [, array $option])</h4>
+		<p>Get a neo4jPath by conditions</p>
+		<dl>
+			<dt>$algorithm</dt>
+			<dd>NEO4J_PATH_SHORTESTPATH</dd>
+			<dd>NEO4J_PATH_ALLSIMPLEPATHS</dd>
+			<dd>NEO4J_PATH_ALLPATHS</dd>
+			<dd>NEO4J_PATH_DIJKSTRA</dd>
+		</dl>
+		<dl>
+			<dt>$option - An array of options to applay</dt>
+			<dd>max_depth</dd>
+			<dd>cost_property - only use for NEO4J_PATH_DIJKSTRA</dd>
+		</dl>
+	</div>
+
+	<div class="method_description" id="getPathTo">
+		<h4>public neo4jPath neo4jNode::getPathFrom(mixed $start, string $type, int $algorithm [, array $option])</h4>
+		<p>Get a neo4jPath by conditions</p>
+		<dl>
+			<dt>$algorithm</dt>
+			<dd>NEO4J_PATH_SHORTESTPATH</dd>
+			<dd>NEO4J_PATH_ALLSIMPLEPATHS</dd>
+			<dd>NEO4J_PATH_ALLPATHS</dd>
+			<dd>NEO4J_PATH_DIJKSTRA</dd>
+		</dl>
+		<dl>
+			<dt>$option - An array of options to applay</dt>
+			<dd>max_depth</dd>
+			<dd>cost_property - only use for NEO4J_PATH_DIJKSTRA</dd>
+		</dl>
+	</div>
+
+	<div class="method_description" id="getPathsTo">
+		<h4>public neo4jPath neo4jNode::getPathsTo(mixed $to, string $type, int $algorithm [, array $option])</h4>
+		<p>Get all neo4jPathes by conditions</p>
+		<dl>
+			<dt>$algorithm</dt>
+			<dd>NEO4J_PATH_SHORTESTPATH</dd>
+			<dd>NEO4J_PATH_ALLSIMPLEPATHS</dd>
+			<dd>NEO4J_PATH_ALLPATHS</dd>
+			<dd>NEO4J_PATH_DIJKSTRA</dd>
+		</dl>
+
+		<dl>
+			<dt>$option - An array of options to applay</dt>
+			<dd>max_depth</dd>
+			<dd>cost_property - only use for NEO4J_PATH_DIJKSTRA</dd>
+		</dl>
+	</div>
+
+	<div class="method_description" id="getPathsFrom">
+		<h4>public neo4jPath neo4jNode::getPathsFrom(mixed $start, string $type, int $algorithm [, array $option])</h4>
+		<p>Get all neo4jPathes by conditions</p>
+		<dl>
+			<dt>$algorithm</dt>
+			<dd>NEO4J_PATH_SHORTESTPATH</dd>
+			<dd>NEO4J_PATH_ALLSIMPLEPATHS</dd>
+			<dd>NEO4J_PATH_ALLPATHS</dd>
+			<dd>NEO4J_PATH_DIJKSTRA</dd>
+		</dl>
+
+		<dl>
+			<dt>$option - An array of options to applay</dt>
+			<dd>max_depth</dd>
+			<dd>cost_property - only use for NEO4J_PATH_DIJKSTRA</dd>
+		</dl>
+	</div>
+
+	<div class="method_description" id="traverseNodes">
+		<h4>public array neo4jNode::traverseNodes(array $option)</h4>
+		<p>Traverse nodes</p>
+		<dl>
+			<dt>$option</dt>
+			<dd>order - [ breadth_first | depth_first ]</dd>
+			<dd>relationships - [ all | in | out ]</dd>
+			<dd>uniqueness - [ node_global | none | relationship_global | node_path | relationship_path ]</dd>
+			<dd>return_filter - [ all | all_but_start_node ]</dd>
+			<dd>prune_evaluator</dd>
+			<dd>max_depth</dd>
+		</dl>
+	</div>
+
+	<div class="method_description" id="traversePaths">
+		<h4>public array neo4jNode::traversePaths(array $option)</h4>
+		<p>Traverse paths</p>
+		<dl>
+			<dt>$option</dt>
+			<dd>order - [ breadth_first | depth_first ]</dd>
+			<dd>relationships - [ all | in | out ]</dd>
+			<dd>uniqueness - [ node_global | none | relationship_global | node_path | relationship_path ]</dd>
+			<dd>return_filter - [ all | all_but_start_node ]</dd>
+			<dd>prune_evaluator</dd>
+			<dd>max_depth</dd>
+		</dl>
+	</div>
+
+	<div class="method_description" id="traverseRelationships">
+		<h4>public array neo4jNode::traverseRelationships(array $option)</h4>
+		<p>Traverse relationships</p>
+		<dl>
+			<dt>$option</dt>
+			<dd>order - [ breadth_first | depth_first ]</dd>
+			<dd>relationships - [ all | in | out ]</dd>
+			<dd>uniqueness - [ node_global | none | relationship_global | node_path | relationship_path ]</dd>
+			<dd>return_filter - [ all | all_but_start_node ]</dd>
+			<dd>prune_evaluator</dd>
+			<dd>max_depth</dd>
+		</dl>
+	</div>
+</body>
+</html>
