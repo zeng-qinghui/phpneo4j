@@ -72,7 +72,7 @@ phpneo4j
 	<dd><a href="#neo4jPath_getNodes">neo4jPath::getNodes</a></dd>
 	<dd><a href="#neo4jPath_getRelationships">neo4jPath::getRelationships</a></dd>
 </dl>
-<h2 id="neo4j">neo4j</h2>
+<h1 id="neo4j">neo4j</h1>
 <dl>
 	<dd><a href="#neo4j___construct">neo4j::__construct</a></dd>
 	<dd><a href="#neo4j_createNode">neo4j::createNode</a></dd>
@@ -91,26 +91,26 @@ phpneo4j
 	<dd><a href="#neo4j_query">neo4j::query</a></dd>
 	<dd><a href="#neo4j_restAPI">neo4j::restAPI</a></dd>
 </dl>
-<h3 id="neo4j___construct">public neo4j::__construct([string $host="localhost" [,int $port=7474 [,string $userpsw=""]]])</h3>
+<h2 id="neo4j___construct">public neo4j::__construct([string $host="localhost" [,int $port=7474 [,string $userpsw=""]]])</h2>
 <p>Create a new neo4j connection object</p>
 	<dl>
 		<dt>userpsw</dt>
 		<dd>username:password</dd>
 	</dl>
-<h3 id="neo4j_createNode">public neo4jNode neo4j::createNode([array $properties=array()])</h3>
+<h2 id="neo4j_createNode">public neo4jNode neo4j::createNode([array $properties=array()])</h2>
 <p>Create a neo4jNode</p>
-<h3 id="neo4j_getNode">public neo4jNode neo4j::getNode(string $id)</h3>
+<h2 id="neo4j_getNode">public neo4jNode neo4j::getNode(string $id)</h2>
 <p>Get a neo4jNode by nodeId</p>
-<h3 id="neo4j_deleteNode">public neo4j::deleteNode(string $id)</h3>
+<h2 id="neo4j_deleteNode">public neo4j::deleteNode(string $id)</h2>
 <p>Delete a neo4jNode by nodeId</p>
-<h3 id="neo4j_createRelationship">public neo4jRelationship neo4j::createRelationship(mixed $start, mixed $to [,string $type="" [,array $properties=array()]])</h3>
+<h2 id="neo4j_createRelationship">public neo4jRelationship neo4j::createRelationship(mixed $start, mixed $to [,string $type="" [,array $properties=array()]])</h2>
 <p>Create a neo4jRelationship</p>
 <p>$start and $to can be nodeId or neo4jNode object.</p>
-<h3 id="neo4j_getRelationship">public neo4jRelationship neo4j::getRelationship(string $id)</h3>
+<h2 id="neo4j_getRelationship">public neo4jRelationship neo4j::getRelationship(string $id)</h2>
 <p>Get a neo4jRelationship by relationshipId</p>
-<h3 id="neo4j_deleteRelationship">public neo4j::deleteRelationship(string $id)</h3>
+<h2 id="neo4j_deleteRelationship">public neo4j::deleteRelationship(string $id)</h2>
 <p>Delete a neo4jRelationship by relationshipId</p>
-<h3 id="neo4j_getPath">public neo4jPath neo4j::getPath(mixed $start, mixed $to, string $type, int $algorithm [, array $option])</h3>
+<h2 id="neo4j_getPath">public neo4jPath neo4j::getPath(mixed $start, mixed $to, string $type, int $algorithm [, array $option])</h2>
 <p>Get a neo4jPath by conditions</p>
 <dl>
 	<dt>$algorithm</dt>
@@ -124,7 +124,7 @@ phpneo4j
 	<dd>max_depth</dd>
 	<dd>cost_property - only use for NEO4J_PATH_DIJKSTRA</dd>
 </dl>
-<h3 id="neo4j_getPaths">public neo4jPath neo4j::getPaths(mixed $start, mixed $to, string $type, int $algorithm [, array $option])</h3>
+<h2 id="neo4j_getPaths">public neo4jPath neo4j::getPaths(mixed $start, mixed $to, string $type, int $algorithm [, array $option])</h2>
 <p>Get all neo4jPathes by conditions</p>
 <dl>
 	<dt>$algorithm</dt>
@@ -138,19 +138,19 @@ phpneo4j
 	<dd>max_depth</dd>
 	<dd>cost_property - only use for NEO4J_PATH_DIJKSTRA</dd>
 </dl>
-<h3 id="neo4j_getNodeIndex">public neo4jIndex neo4j::getNodeIndex(string $id)</h3>
+<h2 id="neo4j_getNodeIndex">public neo4jIndex neo4j::getNodeIndex(string $id)</h2>
 <p>Get a neo4jIndex of neo4jNode by indexId</p>
-<h3 id="neo4j_deleteNodeIndex">public neo4j::deleteNodeIndex(string $id)</h3>
+<h2 id="neo4j_deleteNodeIndex">public neo4j::deleteNodeIndex(string $id)</h2>
 <p>Delete a neo4jIndex of neo4jNode by indexId</p>
-<h3 id="neo4j_getRelationshipIndex">public neo4jIndex neo4j::getRelationshipIndex(string $id)</h3>
+<h2 id="neo4j_getRelationshipIndex">public neo4jIndex neo4j::getRelationshipIndex(string $id)</h2>
 <p>Get a neo4jIndex of neo4jRelationship by indexId</p>
-<h3 id="neo4j_deleteRelationshipIndex">public neo4j::deleteRelationshipIndex(string $id)</h3>
+<h2 id="neo4j_deleteRelationshipIndex">public neo4j::deleteRelationshipIndex(string $id)</h2>
 <p>Delete a neo4jIndex of neo4jRelationship by indexId</p>
-<h3 id="neo4j_cypher">public array neo4j::cypher(string $query [, array $params = array()])</h3>
+<h2 id="neo4j_cypher">public array neo4j::cypher(string $query [, array $params = array()])</h2>
 <p>Query with cypher</p>
-<h3 id="neo4j_query">public array neo4j::query(string $query)</h3>
+<h2 id="neo4j_query">public array neo4j::query(string $query)</h2>
 <p>Find node by query from an automatic index</p>
-<h3 id="neo4j_restAPI">public array neo4j::restAPI(int $method, string $path [,array $data])</h3>
+<h2 id="neo4j_restAPI">public array neo4j::restAPI(int $method, string $path [,array $data])</h2>
 <p>Send a request by restAPI</p>
 <dl>
 	<dt>$method</dt>
@@ -159,7 +159,7 @@ phpneo4j
 	<dd>REST_METHOD_DELETE</dd>
 	<dd>REST_METHOD_PUT</dd>
 </dl>
-<h2 id="neo4jNode">neo4jNode</h2>
+<h1 id="neo4jNode">neo4jNode</h1>
 <dl>
 	<dd><a href="#neo4jNode_getId">neo4jNode::getId</a></dd>
 	<dd><a href="#neo4jNode_getUri">neo4jNode::getUri</a></dd>
@@ -179,25 +179,25 @@ phpneo4j
 	<dd><a href="#neo4jNode_traversePaths">neo4jNode::traversePaths</a></dd>
 	<dd><a href="#neo4jNode_traverseRelationships">neo4jNode::traverseRelationships</a></dd>
 </dl>
-<h3 id="neo4jNode_getId">public string neo4jNode::getId()</h3>
+<h2 id="neo4jNode_getId">public string neo4jNode::getId()</h2>
 <p>Get nodeId</p>
-<h3 id="neo4jNode_getUri">public string neo4jNode::getUri()</h3>
+<h2 id="neo4jNode_getUri">public string neo4jNode::getUri()</h2>
 <p>Get uri</p>
-<h3 id="neo4jNode_save">public neo4jNode neo4jNode::save()</h3>
+<h2 id="neo4jNode_save">public neo4jNode neo4jNode::save()</h2>
 <p>Save self</p>
-<h3 id="neo4jNode_delete">public neo4jNode::delete()</h3>
+<h2 id="neo4jNode_delete">public neo4jNode::delete()</h2>
 <p>Delete self</p>
-<h3 id="neo4jNode_getProperty">public mix neo4jNode::getProperty(string $key)</h3>
+<h2 id="neo4jNode_getProperty">public mix neo4jNode::getProperty(string $key)</h2>
 <p>Get a property by key</p>
-<h3 id="neo4jNode_getAllProperties">public array neo4jNode::getAllProperties()</h3>
+<h2 id="neo4jNode_getAllProperties">public array neo4jNode::getAllProperties()</h2>
 <p>Get all properties</p>
-<h3 id="neo4jNode_setProperty">public neo4jNode neo4jNode::setProperty(string $key,mix $value)</h3>
+<h2 id="neo4jNode_setProperty">public neo4jNode neo4jNode::setProperty(string $key,mix $value)</h2>
 <p>Set a property</p>
-<h3 id="neo4jNode_setAllProperties">public neo4jNode neo4jNode::setAllProperties(array $properties)</h3>
+<h2 id="neo4jNode_setAllProperties">public neo4jNode neo4jNode::setAllProperties(array $properties)</h2>
 <p>Set all properties</p>
-<h3 id="neo4jNode_deleteProperty">public neo4jNode neo4jNode::deleteProperty(string $key)</h3>
+<h2 id="neo4jNode_deleteProperty">public neo4jNode neo4jNode::deleteProperty(string $key)</h2>
 <p>Delete a property</p>
-<h3 id="neo4jNode_getRelationships">public array neo4jNode::getRelationships([int $direct = NEO4J_RELATIONSHIP_ALL [, array $typeList = array()]])</h3>
+<h2 id="neo4jNode_getRelationships">public array neo4jNode::getRelationships([int $direct = NEO4J_RELATIONSHIP_ALL [, array $typeList = array()]])</h2>
 <p>Get all relationships</p>
 <dl>
 	<dt>$direct</dt>
@@ -205,7 +205,7 @@ phpneo4j
 	<dd>NEO4J_RELATIONSHIP_OUT</dd>
 	<dd>NEO4J_RELATIONSHIP_ALL</dd>
 </dl>
-<h3 id="neo4jNode_getPathTo">public neo4jPath neo4jNode::getPathTo(mixed $to, string $type, int $algorithm [, array $option])</h3>
+<h2 id="neo4jNode_getPathTo">public neo4jPath neo4jNode::getPathTo(mixed $to, string $type, int $algorithm [, array $option])</h2>
 <p>Get a neo4jPath by conditions</p>
 <dl>
 	<dt>$algorithm</dt>
@@ -219,7 +219,7 @@ phpneo4j
 	<dd>max_depth</dd>
 	<dd>cost_property - only use for NEO4J_PATH_DIJKSTRA</dd>
 </dl>
-<h3 id="neo4jNode_getPathTo">public neo4jPath neo4jNode::getPathFrom(mixed $start, string $type, int $algorithm [, array $option])</h3>
+<h2 id="neo4jNode_getPathTo">public neo4jPath neo4jNode::getPathFrom(mixed $start, string $type, int $algorithm [, array $option])</h2>
 <p>Get a neo4jPath by conditions</p>
 <dl>
 	<dt>$algorithm</dt>
@@ -233,7 +233,7 @@ phpneo4j
 	<dd>max_depth</dd>
 	<dd>cost_property - only use for NEO4J_PATH_DIJKSTRA</dd>
 </dl>
-<h3 id="neo4jNode_getPathsTo">public neo4jPath neo4jNode::getPathsTo(mixed $to, string $type, int $algorithm [, array $option])</h3>
+<h2 id="neo4jNode_getPathsTo">public neo4jPath neo4jNode::getPathsTo(mixed $to, string $type, int $algorithm [, array $option])</h2>
 <p>Get all neo4jPathes by conditions</p>
 <dl>
 	<dt>$algorithm</dt>
@@ -247,7 +247,7 @@ phpneo4j
 	<dd>max_depth</dd>
 	<dd>cost_property - only use for NEO4J_PATH_DIJKSTRA</dd>
 </dl>
-<h3 id="neo4jNode_getPathsFrom">public neo4jPath neo4jNode::getPathsFrom(mixed $start, string $type, int $algorithm [, array $option])</h3>
+<h2 id="neo4jNode_getPathsFrom">public neo4jPath neo4jNode::getPathsFrom(mixed $start, string $type, int $algorithm [, array $option])</h2>
 <p>Get all neo4jPathes by conditions</p>
 <dl>
 	<dt>$algorithm</dt>
@@ -261,7 +261,7 @@ phpneo4j
 	<dd>max_depth</dd>
 	<dd>cost_property - only use for NEO4J_PATH_DIJKSTRA</dd>
 </dl>
-<h3 id="neo4jNode_traverseNodes">public array neo4jNode::traverseNodes(array $option)</h3>
+<h2 id="neo4jNode_traverseNodes">public array neo4jNode::traverseNodes(array $option)</h2>
 <p>Traverse nodes</p>
 <dl>
 	<dt>$option</dt>
@@ -272,7 +272,7 @@ phpneo4j
 	<dd>prune_evaluator</dd>
 	<dd>max_depth</dd>
 </dl>
-<h3 id="neo4jNode_traversePaths">public array neo4jNode::traversePaths(array $option)</h3>
+<h2 id="neo4jNode_traversePaths">public array neo4jNode::traversePaths(array $option)</h2>
 <p>Traverse paths</p>
 <dl>
 	<dt>$option</dt>
@@ -283,7 +283,7 @@ phpneo4j
 	<dd>prune_evaluator</dd>
 	<dd>max_depth</dd>
 </dl>
-<h3 id="neo4jNode_traverseRelationships">public array neo4jNode::traverseRelationships(array $option)</h3>
+<h2 id="neo4jNode_traverseRelationships">public array neo4jNode::traverseRelationships(array $option)</h2>
 <p>Traverse relationships</p>
 <dl>
 	<dt>$option</dt>
@@ -294,7 +294,7 @@ phpneo4j
 	<dd>prune_evaluator</dd>
 	<dd>max_depth</dd>
 </dl>
-<h2 id="neo4jRelationship">neo4jRelationship</h2>
+<h1 id="neo4jRelationship">neo4jRelationship</h1>
 <dl>
 	<dd><a href="#neo4jRelationship_getId">neo4jRelationship::getId</a></dd>
 	<dd><a href="#neo4jRelationship_getUri">neo4jRelationship::getUri</a></dd>
@@ -309,31 +309,31 @@ phpneo4j
 	<dd><a href="#neo4jRelationship_endNode">neo4jRelationship::endNode</a></dd>
 	<dd><a href="#neo4jRelationship_getType">neo4jRelationship::getType</a></dd>
 </dl>
-<h3 id="neo4jRelationship_getId">public string neo4jRelationship::getId()</h3>
+<h2 id="neo4jRelationship_getId">public string neo4jRelationship::getId()</h2>
 <p>Get relationshipId</p>
-<h3 id="neo4jRelationship_getUri">public string neo4jRelationship::getUri()</h3>
+<h2 id="neo4jRelationship_getUri">public string neo4jRelationship::getUri()</h2>
 <p>Get uri</p>
-<h3 id="neo4jRelationship_save">public neo4jRelationship neo4jRelationship::save()</h3>
+<h2 id="neo4jRelationship_save">public neo4jRelationship neo4jRelationship::save()</h2>
 <p>Save self</p>
-<h3 id="neo4jRelationship_delete">public neo4jRelationship::delete()</h3>
+<h2 id="neo4jRelationship_delete">public neo4jRelationship::delete()</h2>
 <p>Delete self</p>
-<h3 id="neo4jRelationship_getProperty">public mix neo4jRelationship::getProperty(string $key)</h3>
+<h2 id="neo4jRelationship_getProperty">public mix neo4jRelationship::getProperty(string $key)</h2>
 <p>Get a property by key</p>
-<h3 id="neo4jRelationship_getAllProperties">public array neo4jRelationship::getAllProperties()</h3>
+<h2 id="neo4jRelationship_getAllProperties">public array neo4jRelationship::getAllProperties()</h2>
 <p>Get all properties</p>
-<h3 id="neo4jRelationship_setProperty">public neo4jRelationship neo4jRelationship::setProperty(string $key,mix $value)</h3>
+<h2 id="neo4jRelationship_setProperty">public neo4jRelationship neo4jRelationship::setProperty(string $key,mix $value)</h2>
 <p>Set a property</p>
-<h3 id="neo4jRelationship_setAllProperties">public neo4jRelationship neo4jRelationship::setAllProperties(array $properties)</h3>
+<h2 id="neo4jRelationship_setAllProperties">public neo4jRelationship neo4jRelationship::setAllProperties(array $properties)</h2>
 <p>Set all properties</p>
-<h3 id="neo4jRelationship_deleteProperty">public neo4jRelationship neo4jRelationship::deleteProperty(string $key)</h3>
+<h2 id="neo4jRelationship_deleteProperty">public neo4jRelationship neo4jRelationship::deleteProperty(string $key)</h2>
 <p>Delete a property</p>
-<h3 id="neo4jRelationship_startNode">public neo4jNode neo4jRelationship::startNode()</h3>
+<h2 id="neo4jRelationship_startNode">public neo4jNode neo4jRelationship::startNode()</h2>
 <p>Get start node</p>
-<h3 id="neo4jRelationship_endNode">public neo4jNode neo4jRelationship::endNode()</h3>
+<h2 id="neo4jRelationship_endNode">public neo4jNode neo4jRelationship::endNode()</h2>
 <p>Get end node</p>
-<h3 id="neo4jRelationship_getType">public string neo4jRelationship::getType()</h3>
+<h2 id="neo4jRelationship_getType">public string neo4jRelationship::getType()</h2>
 <p>Get type</p>
-<h2 id="neo4jIndex">neo4jIndex</h2>
+<h1 id="neo4jIndex">neo4jIndex</h1>
 <dl>
 	<dd><a href="#neo4jIndex_getId">neo4jIndex::getId</a></dd>
 	<dd><a href="#neo4jIndex_get">neo4jIndex::get</a></dd>
@@ -342,19 +342,19 @@ phpneo4j
 	<dd><a href="#neo4jIndex_remove">neo4jIndex::remove</a></dd>
 	<dd><a href="#neo4jIndex_delete">neo4jIndex::delete</a></dd>
 </dl>
-<h3 id="neo4jIndex_getId">public string neo4jIndex::getId()</h3>
+<h2 id="neo4jIndex_getId">public string neo4jIndex::getId()</h2>
 <p>Get indexId</p>
-<h3 id="neo4jIndex_get">public mix neo4jIndex::get(string $key, string $value)</h3>
+<h2 id="neo4jIndex_get">public mix neo4jIndex::get(string $key, string $value)</h2>
 <p>Get objects by $key and $value</p>
-<h3 id="neo4jIndex_getOrCreate">public mix neo4jIndex::getOrCreate(mixed $obj, string $key, string $value)</h3>
+<h2 id="neo4jIndex_getOrCreate">public mix neo4jIndex::getOrCreate(mixed $obj, string $key, string $value)</h2>
 <p>Get or create an object by $key and $value</p>
-<h3 id="neo4jIndex_add">public neo4jIndex neo4jIndex::add(mixed $obj, string $key, string $value)</h3>
+<h2 id="neo4jIndex_add">public neo4jIndex neo4jIndex::add(mixed $obj, string $key, string $value)</h2>
 <p>Add an object to the index</p>
-<h3 id="neo4jIndex_remove">public neo4jIndex neo4jIndex::remove(mixed $obj, string $key, string $value)</h3>
+<h2 id="neo4jIndex_remove">public neo4jIndex neo4jIndex::remove(mixed $obj, string $key, string $value)</h2>
 <p>Remove an object from the index</p>
-<h3 id="neo4jIndex_delete">public neo4jIndex::delete()</h3>
+<h2 id="neo4jIndex_delete">public neo4jIndex::delete()</h2>
 <p>Delete self</p>
-<h2 id="neo4jPath">neo4jPath</h2>
+<h1 id="neo4jPath">neo4jPath</h1>
 <dl>
 	<dd><a href="#neo4jPath_startNode">neo4jPath::startNode</a></dd>
 	<dd><a href="#neo4jPath_endNode">neo4jPath::endNode</a></dd>
@@ -362,13 +362,13 @@ phpneo4j
 	<dd><a href="#neo4jPath_getNodes">neo4jPath::getNodes</a></dd>
 	<dd><a href="#neo4jPath_getRelationships">neo4jPath::getRelationships</a></dd>
 </dl>
-<h3 id="neo4jPath_startNode">public neo4jNode neo4jPath::startNode()</h3>
+<h2 id="neo4jPath_startNode">public neo4jNode neo4jPath::startNode()</h2>
 <p>Get start node</p>
-<h3 id="neo4jPath_endNode">public neo4jNode neo4jPath::endNode()</h3>
+<h2 id="neo4jPath_endNode">public neo4jNode neo4jPath::endNode()</h2>
 <p>Get end node</p>
-<h3 id="neo4jPath_getLength">public int neo4jPath::getLength()</h3>
+<h2 id="neo4jPath_getLength">public int neo4jPath::getLength()</h2>
 <p>Get length</p>
-<h3 id="neo4jPath_getNodes">public array neo4jPath::getNodes()</h3>
+<h2 id="neo4jPath_getNodes">public array neo4jPath::getNodes()</h2>
 <p>Get all nodes</p>
-<h3 id="neo4jPath_getRelationships">public array neo4jPath::getRelationships()</h3>
+<h2 id="neo4jPath_getRelationships">public array neo4jPath::getRelationships()</h2>
 <p>Get all relationships</p>
