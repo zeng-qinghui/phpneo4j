@@ -3,12 +3,6 @@ phpneo4j
 <html>
 	<head>
 		<title>phpNeo4j</title>
-		<style type="text/css">
-			.index_list dt{margin-top:20px;font-size:18px;}
-		</style>
-		<style type="text/css">
-			.method_description{border:1px solid #555;margin-top:20px;}
-		</style>
 	</head>
 	<body>
 		<h2>Index</h2>
