@@ -112,32 +112,32 @@ phpneo4j
 <p>Delete a neo4jRelationship by relationshipId</p>
 <h3 id="neo4j_getPath">public neo4jPath neo4j::getPath(mixed $start, mixed $to, string $type, int $algorithm [, array $option])</h3>
 <p>Get a neo4jPath by conditions</p>
-	<dl>
-		<dt>$algorithm</dt>
-		<dd>NEO4J_PATH_SHORTESTPATH</dd>
-		<dd>NEO4J_PATH_ALLSIMPLEPATHS</dd>
-		<dd>NEO4J_PATH_ALLPATHS</dd>
-		<dd>NEO4J_PATH_DIJKSTRA</dd>
-	</dl>
-	<dl>
-		<dt>$option - An array of options to applay</dt>
-		<dd>max_depth</dd>
-		<dd>cost_property - only use for NEO4J_PATH_DIJKSTRA</dd>
-	</dl>
+<dl>
+	<dt>$algorithm</dt>
+	<dd>NEO4J_PATH_SHORTESTPATH</dd>
+	<dd>NEO4J_PATH_ALLSIMPLEPATHS</dd>
+	<dd>NEO4J_PATH_ALLPATHS</dd>
+	<dd>NEO4J_PATH_DIJKSTRA</dd>
+</dl>
+<dl>
+	<dt>$option - An array of options to applay</dt>
+	<dd>max_depth</dd>
+	<dd>cost_property - only use for NEO4J_PATH_DIJKSTRA</dd>
+</dl>
 <h3 id="neo4j_getPaths">public neo4jPath neo4j::getPaths(mixed $start, mixed $to, string $type, int $algorithm [, array $option])</h3>
 <p>Get all neo4jPathes by conditions</p>
-	<dl>
-		<dt>$algorithm</dt>
-		<dd>NEO4J_PATH_SHORTESTPATH</dd>
-		<dd>NEO4J_PATH_ALLSIMPLEPATHS</dd>
-		<dd>NEO4J_PATH_ALLPATHS</dd>
-		<dd>NEO4J_PATH_DIJKSTRA</dd>
-	</dl>
-	<dl>
-		<dt>$option - An array of options to applay</dt>
-		<dd>max_depth</dd>
-		<dd>cost_property - only use for NEO4J_PATH_DIJKSTRA</dd>
-	</dl>
+<dl>
+	<dt>$algorithm</dt>
+	<dd>NEO4J_PATH_SHORTESTPATH</dd>
+	<dd>NEO4J_PATH_ALLSIMPLEPATHS</dd>
+	<dd>NEO4J_PATH_ALLPATHS</dd>
+	<dd>NEO4J_PATH_DIJKSTRA</dd>
+</dl>
+<dl>
+	<dt>$option - An array of options to applay</dt>
+	<dd>max_depth</dd>
+	<dd>cost_property - only use for NEO4J_PATH_DIJKSTRA</dd>
+</dl>
 <h3 id="neo4j_getNodeIndex">public neo4jIndex neo4j::getNodeIndex(string $id)</h3>
 <p>Get a neo4jIndex of neo4jNode by indexId</p>
 <h3 id="neo4j_deleteNodeIndex">public neo4j::deleteNodeIndex(string $id)</h3>
@@ -152,13 +152,13 @@ phpneo4j
 <p>Find node by query from an automatic index</p>
 <h3 id="neo4j_restAPI">public array neo4j::restAPI(int $method, string $path [,array $data])</h3>
 <p>Send a request by restAPI</p>
-	<dl>
-		<dt>$method</dt>
-		<dd>REST_METHOD_GET</dd>
-		<dd>REST_METHOD_POST</dd>
-		<dd>REST_METHOD_DELETE</dd>
-		<dd>REST_METHOD_PUT</dd>
-	</dl>
+<dl>
+	<dt>$method</dt>
+	<dd>REST_METHOD_GET</dd>
+	<dd>REST_METHOD_POST</dd>
+	<dd>REST_METHOD_DELETE</dd>
+	<dd>REST_METHOD_PUT</dd>
+</dl>
 <h2 id="neo4jNode">neo4jNode</h2>
 <dl>
 	<dd><a href="#neo4jNode_getId">neo4jNode::getId</a></dd>
@@ -199,101 +199,101 @@ phpneo4j
 <p>Delete a property</p>
 <h3 id="neo4jNode_getRelationships">public array neo4jNode::getRelationships([int $direct = NEO4J_RELATIONSHIP_ALL [, array $typeList = array()]])</h3>
 <p>Get all relationships</p>
-	<dl>
-		<dt>$direct</dt>
-		<dd>NEO4J_RELATIONSHIP_IN</dd>
-		<dd>NEO4J_RELATIONSHIP_OUT</dd>
-		<dd>NEO4J_RELATIONSHIP_ALL</dd>
-	</dl>
+<dl>
+	<dt>$direct</dt>
+	<dd>NEO4J_RELATIONSHIP_IN</dd>
+	<dd>NEO4J_RELATIONSHIP_OUT</dd>
+	<dd>NEO4J_RELATIONSHIP_ALL</dd>
+</dl>
 <h3 id="neo4jNode_getPathTo">public neo4jPath neo4jNode::getPathTo(mixed $to, string $type, int $algorithm [, array $option])</h3>
 <p>Get a neo4jPath by conditions</p>
-	<dl>
-		<dt>$algorithm</dt>
-		<dd>NEO4J_PATH_SHORTESTPATH</dd>
-		<dd>NEO4J_PATH_ALLSIMPLEPATHS</dd>
-		<dd>NEO4J_PATH_ALLPATHS</dd>
-		<dd>NEO4J_PATH_DIJKSTRA</dd>
-	</dl>
-	<dl>
-		<dt>$option - An array of options to applay</dt>
-		<dd>max_depth</dd>
-		<dd>cost_property - only use for NEO4J_PATH_DIJKSTRA</dd>
-	</dl>
+<dl>
+	<dt>$algorithm</dt>
+	<dd>NEO4J_PATH_SHORTESTPATH</dd>
+	<dd>NEO4J_PATH_ALLSIMPLEPATHS</dd>
+	<dd>NEO4J_PATH_ALLPATHS</dd>
+	<dd>NEO4J_PATH_DIJKSTRA</dd>
+</dl>
+<dl>
+	<dt>$option - An array of options to applay</dt>
+	<dd>max_depth</dd>
+	<dd>cost_property - only use for NEO4J_PATH_DIJKSTRA</dd>
+</dl>
 <h3 id="neo4jNode_getPathTo">public neo4jPath neo4jNode::getPathFrom(mixed $start, string $type, int $algorithm [, array $option])</h3>
 <p>Get a neo4jPath by conditions</p>
-	<dl>
-		<dt>$algorithm</dt>
-		<dd>NEO4J_PATH_SHORTESTPATH</dd>
-		<dd>NEO4J_PATH_ALLSIMPLEPATHS</dd>
-		<dd>NEO4J_PATH_ALLPATHS</dd>
-		<dd>NEO4J_PATH_DIJKSTRA</dd>
-	</dl>
-	<dl>
-		<dt>$option - An array of options to applay</dt>
-		<dd>max_depth</dd>
-		<dd>cost_property - only use for NEO4J_PATH_DIJKSTRA</dd>
-	</dl>
+<dl>
+	<dt>$algorithm</dt>
+	<dd>NEO4J_PATH_SHORTESTPATH</dd>
+	<dd>NEO4J_PATH_ALLSIMPLEPATHS</dd>
+	<dd>NEO4J_PATH_ALLPATHS</dd>
+	<dd>NEO4J_PATH_DIJKSTRA</dd>
+</dl>
+<dl>
+	<dt>$option - An array of options to applay</dt>
+	<dd>max_depth</dd>
+	<dd>cost_property - only use for NEO4J_PATH_DIJKSTRA</dd>
+</dl>
 <h3 id="neo4jNode_getPathsTo">public neo4jPath neo4jNode::getPathsTo(mixed $to, string $type, int $algorithm [, array $option])</h3>
 <p>Get all neo4jPathes by conditions</p>
-	<dl>
-		<dt>$algorithm</dt>
-		<dd>NEO4J_PATH_SHORTESTPATH</dd>
-		<dd>NEO4J_PATH_ALLSIMPLEPATHS</dd>
-		<dd>NEO4J_PATH_ALLPATHS</dd>
-		<dd>NEO4J_PATH_DIJKSTRA</dd>
-	</dl>
-	<dl>
-		<dt>$option - An array of options to applay</dt>
-		<dd>max_depth</dd>
-		<dd>cost_property - only use for NEO4J_PATH_DIJKSTRA</dd>
-	</dl>
+<dl>
+	<dt>$algorithm</dt>
+	<dd>NEO4J_PATH_SHORTESTPATH</dd>
+	<dd>NEO4J_PATH_ALLSIMPLEPATHS</dd>
+	<dd>NEO4J_PATH_ALLPATHS</dd>
+	<dd>NEO4J_PATH_DIJKSTRA</dd>
+</dl>
+<dl>
+	<dt>$option - An array of options to applay</dt>
+	<dd>max_depth</dd>
+	<dd>cost_property - only use for NEO4J_PATH_DIJKSTRA</dd>
+</dl>
 <h3 id="neo4jNode_getPathsFrom">public neo4jPath neo4jNode::getPathsFrom(mixed $start, string $type, int $algorithm [, array $option])</h3>
 <p>Get all neo4jPathes by conditions</p>
-	<dl>
-		<dt>$algorithm</dt>
-		<dd>NEO4J_PATH_SHORTESTPATH</dd>
-		<dd>NEO4J_PATH_ALLSIMPLEPATHS</dd>
-		<dd>NEO4J_PATH_ALLPATHS</dd>
-		<dd>NEO4J_PATH_DIJKSTRA</dd>
-	</dl>
-	<dl>
-		<dt>$option - An array of options to applay</dt>
-		<dd>max_depth</dd>
-		<dd>cost_property - only use for NEO4J_PATH_DIJKSTRA</dd>
-	</dl>
+<dl>
+	<dt>$algorithm</dt>
+	<dd>NEO4J_PATH_SHORTESTPATH</dd>
+	<dd>NEO4J_PATH_ALLSIMPLEPATHS</dd>
+	<dd>NEO4J_PATH_ALLPATHS</dd>
+	<dd>NEO4J_PATH_DIJKSTRA</dd>
+</dl>
+<dl>
+	<dt>$option - An array of options to applay</dt>
+	<dd>max_depth</dd>
+	<dd>cost_property - only use for NEO4J_PATH_DIJKSTRA</dd>
+</dl>
 <h3 id="neo4jNode_traverseNodes">public array neo4jNode::traverseNodes(array $option)</h3>
 <p>Traverse nodes</p>
-	<dl>
-		<dt>$option</dt>
-		<dd>order - [ breadth_first | depth_first ]</dd>
-		<dd>relationships - [ all | in | out ]</dd>
-		<dd>uniqueness - [ node_global | none | relationship_global | node_path | relationship_path ]</dd>
-		<dd>return_filter - [ all | all_but_start_node ]</dd>
-		<dd>prune_evaluator</dd>
-		<dd>max_depth</dd>
-	</dl>
+<dl>
+	<dt>$option</dt>
+	<dd>order - [ breadth_first | depth_first ]</dd>
+	<dd>relationships - [ all | in | out ]</dd>
+	<dd>uniqueness - [ node_global | none | relationship_global | node_path | relationship_path ]</dd>
+	<dd>return_filter - [ all | all_but_start_node ]</dd>
+	<dd>prune_evaluator</dd>
+	<dd>max_depth</dd>
+</dl>
 <h3 id="neo4jNode_traversePaths">public array neo4jNode::traversePaths(array $option)</h3>
 <p>Traverse paths</p>
-	<dl>
-		<dt>$option</dt>
-		<dd>order - [ breadth_first | depth_first ]</dd>
-		<dd>relationships - [ all | in | out ]</dd>
-		<dd>uniqueness - [ node_global | none | relationship_global | node_path | relationship_path ]</dd>
-		<dd>return_filter - [ all | all_but_start_node ]</dd>
-		<dd>prune_evaluator</dd>
-		<dd>max_depth</dd>
-	</dl>
+<dl>
+	<dt>$option</dt>
+	<dd>order - [ breadth_first | depth_first ]</dd>
+	<dd>relationships - [ all | in | out ]</dd>
+	<dd>uniqueness - [ node_global | none | relationship_global | node_path | relationship_path ]</dd>
+	<dd>return_filter - [ all | all_but_start_node ]</dd>
+	<dd>prune_evaluator</dd>
+	<dd>max_depth</dd>
+</dl>
 <h3 id="neo4jNode_traverseRelationships">public array neo4jNode::traverseRelationships(array $option)</h3>
 <p>Traverse relationships</p>
-	<dl>
-		<dt>$option</dt>
-		<dd>order - [ breadth_first | depth_first ]</dd>
-		<dd>relationships - [ all | in | out ]</dd>
-		<dd>uniqueness - [ node_global | none | relationship_global | node_path | relationship_path ]</dd>
-		<dd>return_filter - [ all | all_but_start_node ]</dd>
-		<dd>prune_evaluator</dd>
-		<dd>max_depth</dd>
-	</dl>
+<dl>
+	<dt>$option</dt>
+	<dd>order - [ breadth_first | depth_first ]</dd>
+	<dd>relationships - [ all | in | out ]</dd>
+	<dd>uniqueness - [ node_global | none | relationship_global | node_path | relationship_path ]</dd>
+	<dd>return_filter - [ all | all_but_start_node ]</dd>
+	<dd>prune_evaluator</dd>
+	<dd>max_depth</dd>
+</dl>
 <h2 id="neo4jRelationship">neo4jRelationship</h2>
 <dl>
 	<dd><a href="#neo4jRelationship_getId">neo4jRelationship::getId</a></dd>
