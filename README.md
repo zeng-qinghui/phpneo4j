@@ -27,7 +27,8 @@ phpneo4j
 			<dd><a target="_blank" href="./neo4j.html#cypher">neo4j::cypher</a></dd>
 			<dd><a target="_blank" href="./neo4j.html#query">neo4j::query</a></dd>
 			<dd><a target="_blank" href="./neo4j.html#restAPI">neo4j::restAPI</a></dd>
-			
+		</dl>
+		<dl class="index_list">
 			<dt><a target="_blank" href="./neo4jNode.html">neo4jNode</a></dt>
 			<dd><a target="_blank" href="./neo4jNode.html#getId">neo4jNode::getId</a></dd>
 			<dd><a target="_blank" href="./neo4jNode.html#getUri">neo4jNode::getUri</a></dd>
@@ -46,7 +47,8 @@ phpneo4j
 			<dd><a target="_blank" href="./neo4jNode.html#traverseNodes">neo4jNode::traverseNodes</a></dd>
 			<dd><a target="_blank" href="./neo4jNode.html#traversePaths">neo4jNode::traversePaths</a></dd>
 			<dd><a target="_blank" href="./neo4jNode.html#traverseRelationships">neo4jNode::traverseRelationships</a></dd>
-			
+		</dl>
+		<dl class="index_list">
 			<dt><a target="_blank" href="./neo4jRelationship.html">neo4jRelationship</a></dt>
 			<dd><a target="_blank" href="./neo4jRelationship.html#getId">neo4jRelationship::getId</a></dd>
 			<dd><a target="_blank" href="./neo4jRelationship.html#getUri">neo4jRelationship::getUri</a></dd>
@@ -60,7 +62,8 @@ phpneo4j
 			<dd><a target="_blank" href="./neo4jRelationship.html#startNode">neo4jRelationship::startNode</a></dd>
 			<dd><a target="_blank" href="./neo4jRelationship.html#endNode">neo4jRelationship::endNode</a></dd>
 			<dd><a target="_blank" href="./neo4jRelationship.html#getType">neo4jRelationship::getType</a></dd>
-			
+		</dl>
+		<dl class="index_list">
 			<dt><a target="_blank" href="./neo4jIndex.html">neo4jIndex</a></dt>
 			<dd><a target="_blank" href="./neo4jIndex.html#getId">neo4jIndex::getId</a></dd>
 			<dd><a target="_blank" href="./neo4jIndex.html#get">neo4jIndex::get</a></dd>
@@ -68,7 +71,8 @@ phpneo4j
 			<dd><a target="_blank" href="./neo4jIndex.html#add">neo4jIndex::add</a></dd>
 			<dd><a target="_blank" href="./neo4jIndex.html#remove">neo4jIndex::remove</a></dd>
 			<dd><a target="_blank" href="./neo4jIndex.html#delete">neo4jIndex::delete</a></dd>
-			
+		</dl>
+		<dl class="index_list">
 			<dt><a target="_blank" href="./neo4jPath.html">neo4jPath</a></dt>
 			<dd><a target="_blank" href="./neo4jPath.html#startNode">neo4jPath::startNode</a></dd>
 			<dd><a target="_blank" href="./neo4jPath.html#endNode">neo4jPath::endNode</a></dd>
