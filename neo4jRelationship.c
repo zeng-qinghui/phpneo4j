@@ -188,7 +188,7 @@ PHP_METHOD(neo4jRelationship,save){
 	smart_str queryString = {0};
 	id = zend_read_property(neo4jRelationship_ce,getThis(),"_id",sizeof("_id"),0 TSRMLS_CC);
 	data = zend_read_property(neo4jRelationship_ce,getThis(),"_data",sizeof("_data"),0 TSRMLS_CC);
-	parent = zend_read_property(neo4jRelationship_ce,getThis(),"_parent",strlen("_parent"),0 TSRMLS_CC);
+	parent = zend_read_property(neo4jRelationship_ce,getThis(),"_parent",sizeof("_parent"),0 TSRMLS_CC);
 	if(Z_TYPE_P(parent) != IS_OBJECT)RETURN_NULL();
 	if(Z_TYPE_P(data) != IS_ARRAY)RETURN_NULL();
 	smart_str_appendl(&queryString, "relationship/", strlen("relationship/"));
