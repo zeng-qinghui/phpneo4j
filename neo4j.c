@@ -247,7 +247,7 @@ PHP_METHOD(neo4j,createNode){
 	ZVAL_STRING(&path,"node",1);
 	ZVAL_LONG(&method,REST_METHOD_POST);
 	ALLOC_ZVAL(response);
-	if(nodeData){
+	if(nodeData  && Z_TYPE_P(nodeData) == IS_ARRAY && zend_hash_num_elements(Z_ARRVAL_P(nodeData))){
 		NEO4J_METHOD3(neo4j, restAPI, response, getThis(), &method, &path, nodeData);
 	}else{
 		NEO4J_METHOD2(neo4j, restAPI, response, getThis(), &method, &path);
@@ -303,7 +303,7 @@ PHP_METHOD(neo4j,createRelationship){
 	array_init(sendData);
 	add_assoc_string(sendData, "to", toString.c, 0);
 	add_assoc_string(sendData, "type", typeStr, 0);
-	if(properties){
+	if(properties && Z_TYPE_P(properties) == IS_ARRAY && zend_hash_num_elements(Z_ARRVAL_P(properties))){
 		add_assoc_zval(sendData, "data", properties);
 	}
 
